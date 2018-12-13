@@ -38,11 +38,11 @@ vi:
   layouts:
     application:
       Test_Online: "Test Online"
-  sessions:
+  sessionexams:
     new:
-      Create: "Create a Session"
+      Create: "Create a Session Exam"
     edit:
-      Update: "Update Session Details"
+      Update: "Update Session Exam Details"
     show:
       Are: "Are you sure"
       Remove: "Remove"
@@ -50,4 +50,4 @@ vi:
       Edit: "Edit"
       Remove: "Remove"
       Are: "Are you sure?"
-      Add: "Add a New Session"
+      Add: "Add New Session Exam"

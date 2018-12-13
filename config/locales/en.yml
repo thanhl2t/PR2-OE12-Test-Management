@@ -39,8 +39,11 @@ en:
       new:
         Resend: "Resend unlock instructions"
   layouts:
+    nav:
+      Test: "Test Online"
     application:
-      Test_Online: "Test Online"
+      Test: "Test Online"
+      Test_Online: " | Test Online | By Xuan Tuan and Tien Thanh "
   sessionexams:
     update:
       error: "error"
@@ -62,7 +65,7 @@ en:
       Edit: "Edit"
       Remove: "Remove"
       Are: "Are you sure?"
-      Add: "Add a New Session"
+      Add: "Add New Session Exam"
       Search!: "Search!"
-      All: "All sessionsexam"
+      All: "All Session Exam"
       Enter: "Enter Session exam name"

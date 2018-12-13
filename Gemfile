@@ -13,7 +13,6 @@ gem "uglifier", ">= 1.3.0"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
 gem "ransack"
-gem "pg_search"
 gem "bootsnap", ">= 1.1.0", require: false
 
 group :development, :test do
@@ -34,3 +33,4 @@ group :test do
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "bootstrap-sass", "3.3.7"

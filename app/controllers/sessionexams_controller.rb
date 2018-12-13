@@ -32,7 +32,7 @@ class SessionexamsController < ApplicationController
   end
 
   def destroy
-    @sessionexam.destroy
+    Sessionexam.find(params[:id]).destroy
     redirect_to sessionexams_path
   end
 
