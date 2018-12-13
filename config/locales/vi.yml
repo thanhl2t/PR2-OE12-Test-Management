@@ -38,3 +38,16 @@ vi:
   layouts:
     application:
       Test_Online: "Test Online"
+  sessions:
+    new: 
+      Create: "Create a Session"
+    edit:
+      Update: "Update Session Details"
+    show:
+      Are: "Are you sure"
+      Remove: "Remove"
+    index:
+      Edit: "Edit"
+      Remove: "Remove"
+      Are: "Are you sure?"
+      Add: "Add a New Session"
