@@ -1,2 +1,67 @@
 en:
-  hello: "Hello world"
+  devise:
+    confirmation:
+      new:
+        Resend: "Resend confirmation instructions"
+    passwords:
+      edit:
+        Change: "Change your password"
+        Confirm: "Confirm new password"
+        New: "New password"
+      new:
+        Forgot: "Forgot your password?"
+        Send: "Send me reset password instructions"
+    registrations:
+      edit: 
+        characters: "characters minimum"
+        Edit: "Edit"
+        Currently: "Currently waiting confirmation for:"
+        Cancel: "Cancel my account"
+        Are: "Are you sure?"
+        Back: "Back"
+        we: "(we need your current password to confirm your changes)"
+        leave: "(leave blank if you don't want to change it)"
+        Update: "Update"
+        Cancel: "Cancel my account"
+        Unhappy?: "Unhappy?"
+      new:
+        Sign_up: "Sign up"
+      show:
+        Show: "Shows"
+    sessions:
+      new:
+        Log_in: "Log in"
+    unlocks:
+      new:
+        Resend: "Resend unlock instructions"
+  home:
+    index:
+      Log: "Logged in as"
+  layouts:
+    application:
+      Test_Online: "Test Online"
+    header:
+      quiz: "Online Quiz"
+    footer:
+      Languages: "Languages"
+      En: "English"
+      Vi: "Vietnamese"
+      author: "Nguyen Xuan Tuan & Le Tien Thanh"
+      password: "Password"
+  sessions:
+    new: 
+      Create: "Create a Session"
+    edit:
+      Update: "Update Session Details"
+    show:
+      Are: "Are you sure"
+      Remove: "Remove"
+    index:
+      Edit: "Edit"
+      Remove: "Remove"
+      Are: "Are you sure?"
+      Add: "Add a New Session"
+  account:
+    index:
+      Welcome: "Welcome to Online Quiz"
+      Log: "Logged in as " 
