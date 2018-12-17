@@ -1,16 +1,13 @@
 /.bundle
 
-# Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
 
-# Ignore all logfiles and tempfiles.
 /log/*
 /tmp/*
 !/log/.keep
 !/tmp/.keep
 
-# Ignore uploaded files in development
 /storage/*
 !/storage/.keep
 
@@ -20,12 +17,9 @@
 /public/assets
 .byebug_history
 
-# Ignore master key for decrypting credentials and more.
 /config/master.key
 /test/*
-/log/development.log
-
-/config/storage.yml
 /config/database.yml
-/config/credentials.yml
+/config/secrets.yml
+/log/development.log
 /config/credentials.yml.enc
