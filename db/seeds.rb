@@ -1,5 +1,0 @@
-Session.create(exam_name: "kyI", period_for: "60", supervisor: "tuan", create_at: "", updated_at: "")
-Session.create(exam_name: "kyII", period_for: "20", supervisor: "tuan", create_at: "", updated_at: "")
-Session.create(exam_name: "kyIII", period_for: "30", supervisor: "thanh", create_at: "", updated_at: "")
-Session.create(exam_name: "kyIV", period_for: "60", supervisor: "thanh", create_at: "", updated_at: "")
-Session.create(exam_name: "kyV", period_for: "60", supervisor: "tuan", create_at: "", updated_at: "")
