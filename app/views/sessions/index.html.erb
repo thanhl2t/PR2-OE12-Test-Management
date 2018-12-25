@@ -1,9 +1,0 @@
-<table>
-  <% @sessions.each do |session| %>
-    <tr>
-      <td><%= link_to session.exam_name, session_path(session) %></td>
-      <td><%= button_to t(".Edit"), edit_session_path(session), method: "get"%></td>
-      <td><%= button_to t(".Remove"), session_path(session), method: "delete", data: { confirm: t(".Are") } %></td>
-  <% end %>
-</table>
-<%= link_to t(".Add"), new_session_path %>

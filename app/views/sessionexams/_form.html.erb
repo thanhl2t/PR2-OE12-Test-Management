@@ -1,0 +1,8 @@
+<div class="container">
+	<%= form_with model: @sessionexam do |form| %>
+	  <%= form.text_field :exam_name, placeholder: "exam_name" %>
+	  <%= form.text_field :period_for, placeholder: "period_for" %>
+	  <%= form.text_field :supervisor, placeholder: "supervisor" %>
+	  <%= form.submit %>
+	<% end %>
+</div>

@@ -1,0 +1,9 @@
+<div class="index_main container">
+  <h1><%= t ".menu" %></h1>
+  <div class="container2">
+    <h4><%= link_to "Session exams", sessionexams_path, :class => "navbar-link" %></h4>
+    <h4><%= link_to "Question bank", users_path, :class => "navbar-link" %></h4>
+    <h4><%= link_to "List accounts", users_path, :class => "navbar-link" %></h4>
+    <h4><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => "navbar-link" %></h4>
+  </div>
+</div>

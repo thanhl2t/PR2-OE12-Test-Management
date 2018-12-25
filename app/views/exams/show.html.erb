@@ -1,0 +1,17 @@
+<div class="container">
+  <h4><%= @exam.exam_name %></h4>
+  <h4><%= @exam.exam_subject %></h4>
+  <h4><%= @exam.exam_id %></h4>
+  <h4><%= link_to "Câu 1", "#", :class => "navbar-link"  %></h4>
+  <h4><%= link_to "Câu 2", "#", :class => "navbar-link"  %></h4>
+  <h4><%= link_to "Câu 3", "#", :class => "navbar-link"  %></h4>
+  <h4><%= link_to "Câu 4", "#", :class => "navbar-link"  %></h4>
+  <h4><%= link_to "Câu 5", "#", :class => "navbar-link"  %></h4>
+  <h4><%= link_to "Câu 6", "#", :class => "navbar-link"  %></h4>
+  <h4><%= link_to "Câu 7", "#", :class => "navbar-link"  %></h4>
+  <h4><%= link_to "Câu 8", "#", :class => "navbar-link"  %></h4>
+  <h4><%= link_to "Câu 9", "#", :class => "navbar-link"  %></h4>
+  <h4><%= link_to "Câu 10", "#", :class => "navbar-link"  %></h4>
+  <%= button_to t(".Submit"), "#" %>
+  <%= button_to t(".Remove"), @exam, method: :delete, data: { confirm: t(".Are") }, class: "btn btn-danger" %>
+</div>

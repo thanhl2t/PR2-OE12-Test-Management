@@ -1,0 +1,69 @@
+<% provide(:title, t(".All" ))%>
+<div class="container">
+  <div class="header clearfix">
+    <nav>
+      <h2>
+        <p class="text-danger">
+          <%= t ".All" %>
+        </p>
+      </h2>
+      <%= search_form_for @q do |f| %>
+      <%= f.label :exam_name_or_period_for_or_supervisor_cont %>
+      <%= f.search_field :exam_name_or_period_for_or_supervisor_cont %>
+      <%= f.submit %>
+      <% end %>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th><%=t ".exam_name"%></th>
+            <th><%=t ".period_for"%></th>
+            <th><%=t ".supervisor"%></th>
+            <th><%=t ".View"%></th>
+            <th>
+              <%= t ".Edit"%>
+            </th>
+            <th>
+              <%=t ".Remove"%>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @sessionexams.each do |sessionexam| %>
+          <tr>
+            <td>
+              <%= sessionexam.exam_name %>
+            </td>
+            <td>
+              <%= sessionexam.period_for %>
+            </td>
+            <td>
+              <%= sessionexam.supervisor %>
+            </td>
+            <td>
+              <button type="button" class="btn btn-info">
+                <span class="glyphicon glyphicon-eye-open"></span>
+                <%= link_to t(".View"), sessionexam_path(sessionexam) %>
+              </button>
+            </td>
+            <td>
+              <%= button_to t(".Edit"), edit_sessionexam_path(sessionexam), class: "btn btn-warning" ,method: "get"%>
+              <!-- <button type="button" class="btn btn-warning">
+                    <span class="glyphicon glyphicon-pencil"></span>
+                    <%= link_to t(".Edit"), edit_sessionexam_path(sessionexam), method: "get"%>
+                  </button> -->
+            </td>
+            <td>
+              <%= button_to t(".Remove"), sessionexam_path(sessionexam),class: "btn btn-danger" , method: "delete", data: { confirm: t(".Are") }%>
+            </td>
+            <% end %>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
+      <button type="button" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span>
+        <%= link_to t(".Add"), new_sessionexam_path %>
+      </button>
+    </nav>
+  </div>
+</div>
