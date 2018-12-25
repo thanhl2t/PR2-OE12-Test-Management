@@ -1,18 +1,22 @@
 Rails.application.routes.draw do
   root "home#index"
-
   devise_for :users
+  resources :users, :only =>[:show]
 
   resources :user do
-    get "signin", to: "devise/sessions#new"
-    post "signin", to: "devise/sessions#create"
-    delete "signout", to: "devise/sessions#destroy"
+    get "/signin", to: "devise/sessions#new"
+    post "/signin", to: "devise/sessions#create"
+    delete "/signout", to: "devise/sessions#destroy"
   end
 
-  resources :sessions do
-    get "sessions/index"
-    get "sessions/show"
-    get "sessions/new"
-    get "sessions/edit"
+  resources :sessionexams do
+    get "sessionexams/index"
+    get "sessionexams/show"
+    get "sessionexams/new"
+    get "sessionexams/edit"
   end
+
+  match "/main", to: "main#index", via: "get"
+  match "/users", to: "users#index", via: "get"
+  match "/users/:id", to: "users#show", via: "get"
 end

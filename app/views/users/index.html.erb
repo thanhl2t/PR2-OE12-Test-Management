@@ -1,0 +1,26 @@
+<div class="index_main container">
+  <div class="navbar-text pull-right">
+    <h2><%= t ".list"%></h2>
+    <% @users = User.all %>
+    <table class="table table-striped">
+      <tr>
+        <th><%= t ".name"%></th>
+        <th><%= t ".email"%></th>
+        <th class="t1"><%= t ".edit"%></th>
+      </tr>
+      <% @users.each do |user| %>
+      <tr>
+        <td><%= user.username %></td>
+        <td><%= user.email %></td>
+        <td class="t1">
+        <select id="select2-single-input-role" class="form-control input-role select2-hidden-accessible" tabindex="-1" aria-hidden="true">
+        <option value="user">User</option>
+        <option value="admin">Admin</option>
+        </select>
+        <%= button_to t(".edit"),  edit_user_registration_path, method: "get"%>
+        </td>
+      </tr>
+      <% end %>
+    </table>
+  </div>
+</div>

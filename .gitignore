@@ -23,3 +23,4 @@
 /config/secrets.yml
 /log/development.log
 /config/credentials.yml.enc
+/.vscode/settings.json
