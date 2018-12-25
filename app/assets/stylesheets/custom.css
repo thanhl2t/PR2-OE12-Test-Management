@@ -1,0 +1,29 @@
+body {
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+
+ul {
+  display: contents;
+}
+
+.navbar-text {
+  float: inherit;
+}
+
+.form-control {
+}
+
+.header-navbar {
+  height: 60px;
+}
+
+.container {
+  height: 80vh;
+  text-align: -webkit-center;
+}
+
+.footer-navbar {
+  height: 10vh;
+}

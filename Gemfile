@@ -5,13 +5,16 @@ ruby "2.5.1"
 gem "rails", "~> 5.2.1"
 gem "mysql2"
 gem "i18n"
-gem "devise"
 gem "config"
+gem "devise"
 gem "puma", "~> 3.11"
 gem "sass-rails", "~> 5.0"
 gem "uglifier", ">= 1.3.0"
 gem "turbolinks", "~> 5"
 gem "jbuilder", "~> 2.5"
+gem "ransack"
+gem "cancancan"
+gem "omniauth-facebook"
 gem "bootsnap", ">= 1.1.0", require: false
 
 group :development, :test do
@@ -32,3 +35,4 @@ group :test do
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem "bootstrap-sass", "3.3.7"

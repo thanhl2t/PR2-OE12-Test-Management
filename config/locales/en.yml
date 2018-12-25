@@ -1,8 +1,4 @@
 en:
-  sessions:
-    show:
-      already: "already exist"
-      empty: "empty"
   devise:
     confirmation:
       new:
@@ -16,17 +12,17 @@ en:
         Forgot: "Forgot your password?"
         Send: "Send me reset password instructions"
     registrations:
-      edit:
+      edit: 
         characters: "characters minimum"
         Edit: "Edit"
         Currently: "Currently waiting confirmation for:"
-        Cancel: "Cancel my account"
+        Cancel: "Cancel account"
         Are: "Are you sure?"
         Back: "Back"
         we: "(we need your current password to confirm your changes)"
         leave: "(leave blank if you don't want to change it)"
         Update: "Update"
-        Cancel: "Cancel my account"
+        Del: "Delete"
         Unhappy?: "Unhappy?"
       new:
         Sign_up: "Sign up"
@@ -38,10 +34,26 @@ en:
     unlocks:
       new:
         Resend: "Resend unlock instructions"
+  home:
+    index:
+      Log: "Successful registration of account:"
+      menu: "Menu"
   layouts:
     application:
       Test_Online: "Test Online"
-  sessions:
+    header:
+      quiz: "Online Quiz"
+    footer:
+      Languages: "Languages"
+      En: "English"
+      Vi: "Vietnamese"
+      designed: "Designed by"
+      author: "Nguyen Xuan Tuan & Le Tien Thanh"
+      password: "Password"
+  sessionexams:
+    update:
+      error: "error"
+      no_sessionexam: "No Session exam"
     new:
       Create: "Create a Session"
     edit:
@@ -50,7 +62,76 @@ en:
       Are: "Are you sure"
       Remove: "Remove"
     index:
+      exam_name: "Session exam Name"
+      period_for: "Period for"
+      supervisor: "Supervisor"
+      create_at: "Create at"
+      updated_at: "Updated at"
+      View: "View"
       Edit: "Edit"
       Remove: "Remove"
       Are: "Are you sure?"
-      Add: "Add a New Session"
+      Add: "Add New Session Exam"
+      Search!: "Search!"
+      All: "All Session Exam"
+      Enter: "Enter Session exam name"
+  exams:
+    update:
+      error: "error"
+      no_sessionexam: "No Session exam"
+    new:
+      Create: "Create a Session"
+    edit:
+      Update: "Update Session Details"
+    show:
+      Are: "Are you sure"
+      Submit: "Submit"
+      Remove: "Delete"
+    index:
+      exam_name: "Session exam Name"
+      code: "Code"
+      period_for: "Period for"
+      supervisor: "Supervisor"
+      create_at: "Create at"
+      updated_at: "Updated at"
+      View: "View"
+      Edit: "Edit"
+      Remove: "Remove"
+      Are: "Are you sure?"
+      Add: "Add New Exam"
+      Search!: "Search!"
+      All: "All exam questions"
+      Enter: "Enter Session exam name"
+  questionbanks:
+    update:
+      error: "error"
+      no_sessionexam: "No Session exam"
+    new:
+      Create: "Create questions"
+    edit:
+      Update: "Update Session Details"
+    show:
+      Are: "Are you sure"
+      Submit: "Submit"
+      Remove: "Delete"
+    index:
+      subject: "Subject"
+      id: "Code"
+      question: "Questions"
+      answer: "Answer"
+      View: "View"
+      Edit: "Edit"
+      Remove: "Remove"
+      Are: "Are you sure?"
+      Add: "Add New Exam"
+      Search!: "Search!"
+      All: "All exam questions"
+      Enter: "Enter Session exam name"
+  users:
+    index:
+      list: "List users"
+      name: "Users name"
+      email: "Email"
+      edit: "Edit"
+      delete: "Delete"
+      role: "Role"

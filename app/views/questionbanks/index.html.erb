@@ -1,0 +1,57 @@
+<% provide(:title, t(".All" ))%>
+<div class="container">
+  <div class="header clearfix">
+    <nav>
+      <h2>
+        <p class="text-danger">
+          <%= t ".All" %>
+        </p>
+      </h2>
+      <%= search_form_for @q do |f| %>
+      <%= f.label :questionbank_subject %>
+      <%= f.search_field :questionbank_subject_cont %>
+      <%= f.submit %>
+      <% end %>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th><%= t ".subjects" %></th>
+            <th><%= t ".id" %></th>
+            <th><%= t ".question" %></th>
+            <th><%= t ".answer" %></th>
+            <th><%= t ".View" %></th>
+            <th><%= t ".Edit" %></th>
+            <th><%= t ".Remove" %></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @questionbanks.each do |questionbank| %>
+          <tr>
+            <td><%= questionbank.questionbank_subject %></td>
+            <td><%= questionbank.questionbank_id %></td>
+            <td><%= questionbank.questionbank_question %></td>
+            <td><%= questionbank.questionbank_answer %></td>
+            <td>
+              <button type="button" class="btn btn-info">
+                <span class="glyphicon glyphicon-eye-open"></span>
+                <%= link_to t(".View"), questionbank_path(questionbank) %>
+              </button>
+            </td>
+            <td>
+              <%= button_to t(".Edit"), edit_questionbank_path(questionbank), class: "btn btn-warning" ,method: "get"%>
+            </td>
+            <td>
+              <%= button_to t(".Remove"), questionbank_path(questionbank), class: "btn btn-danger" , method: "delete", data: { confirm: t(".Are") }%>
+            </td>
+            <% end %>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
+      <button type="button" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span>
+        <%= link_to t(".Add"), new_questionbank_path %>
+      </button>
+    </nav>
+  </div>
+</div>

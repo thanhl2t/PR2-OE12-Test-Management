@@ -1,0 +1,2 @@
+class Questionbank < ApplicationRecord
+end

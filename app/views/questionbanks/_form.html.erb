@@ -1,0 +1,9 @@
+<div class="container">
+	<%= form_with model: @questionbank do |form| %>
+	  <%= form.text_field :questionbank_subject, placeholder: ":questionbank_subject" %>
+	  <%= form.text_field :questionbank_id, placeholder: "questionbank_id" %>
+	  <%= form.text_field :questionbank_question, placeholder: "questionbank_question" %>
+	  <%= form.text_field :questionbank_answer, placeholder: "questionbank_answer" %>
+	  <%= form.submit %>
+	<% end %>
+</div>

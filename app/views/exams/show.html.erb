@@ -1,0 +1,7 @@
+<div class="container">
+  <h4><%= @exam.exam_name %></h4>
+  <h4><%= @exam.exam_subject %></h4>
+  <h4><%= @exam.exam_id %></h4>
+  <%= button_to t(".Submit"), "#" %>
+  <%= button_to t(".Remove"), @exam, method: :delete, data: { confirm: t(".Are") }, class: "btn btn-danger" %>
+</div>

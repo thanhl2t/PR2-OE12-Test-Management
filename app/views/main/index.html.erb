@@ -1,0 +1,14 @@
+<div class="index_main container">
+  <h1><%= t ".menu" %></h1>
+  <div class="container2 col-md-12 navbar-collapse collapse">
+	<ul class="nav navbar-nav">
+    <li><%= link_to "Session exams", sessionexams_path, :class => "navbar-link" %></li>
+    <li><%= link_to "Question bank", questionbanks_path, :class => "navbar-link" %></li>
+    <li><%= link_to "List accounts", users_path, :class => "navbar-link" %></li>
+    <li><%= link_to "Student transcripts", "#", :class => "navbar-link" %></li>
+    <li><%= link_to "Teacher information", "#", :class => "navbar-link" %></li>
+    <li><%= link_to "Sign in with Facebook", user_facebook_omniauth_authorize_path %></li>
+    <li><%= link_to "Logout", destroy_user_session_path, method: :delete, :class => "navbar-link" %></li>
+  </ul>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="container">
+  <h4><%= @questionbank.questionbank_subject %></h4>
+  <h4><%= @questionbank.questionbank_question %></h4>
+  <h4><%= @questionbank.questionbank_answer %></h4>
+  <%= button_to t(".Remove"), @questionbank, method: :delete, data: { confirm: t(".Are") }, class: "btn btn-danger" %>
+</div>

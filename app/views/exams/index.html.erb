@@ -1,0 +1,55 @@
+<% provide(:title, t(".All" ))%>
+<div class="container">
+  <div class="header clearfix">
+    <nav>
+      <h2>
+        <p class="text-danger">
+          <%= t ".All" %>
+        </p>
+      </h2>
+      <%= search_form_for @q do |f| %>
+      <%= f.label :exam_subject %>
+      <%= f.search_field :exam_subject_cont %>
+      <%= f.submit %>
+      <% end %>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th><%=t ".exam_name"%></th>
+            <th><%=t ".exam_subjects"%></th>
+            <th><%=t ".code"%></th>
+            <th><%=t ".View"%></th>
+            <th><%=t ".Edit"%></th>
+            <th><%=t ".Remove"%></th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @exams.each do |exam| %>
+          <tr>
+            <td><%= exam.exam_name %></td>
+            <td><%= exam.exam_subject %></td>
+            <td><%= exam.exam_id %></td>
+            <td>
+              <button type="button" class="btn btn-info">
+                <span class="glyphicon glyphicon-eye-open"></span>
+                <%= link_to t(".View"), exam_path(exam) %>
+              </button>
+            </td>
+            <td>
+              <%= button_to t(".Edit"), edit_exam_path(exam), class: "btn btn-warning" ,method: "get"%>
+            </td>
+            <td>
+              <%= button_to t(".Remove"), exam_path(exam),class: "btn btn-danger" , method: "delete", data: { confirm: t(".Are") }%>
+            </td>
+            <% end %>
+          </tr>
+        </tbody>
+      </table>
+      <br/>
+      <button type="button" class="btn btn-success">
+        <span class="glyphicon glyphicon-plus"></span>
+        <%= link_to t(".Add"), new_exam_path %>
+      </button>
+    </nav>
+  </div>
+</div>
