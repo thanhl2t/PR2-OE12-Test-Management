@@ -1,5 +1,5 @@
 en:
-  sessions:
+  sessionexams:
     show:
       already: "already exist"
       empty: "empty"
@@ -41,7 +41,10 @@ en:
   layouts:
     application:
       Test_Online: "Test Online"
-  sessions:
+  sessionexams:
+    update:
+      error: "error"
+      no_sessionexam: "No Session exam"
     new:
       Create: "Create a Session"
     edit:
@@ -50,7 +53,16 @@ en:
       Are: "Are you sure"
       Remove: "Remove"
     index:
+      exam_name: "Exam Name"
+      period_for: "Period For"
+      supervisor: "Supervisor"
+      create_at: "Create at"
+      updated_at: "Updated at"
+      View: "View"
       Edit: "Edit"
       Remove: "Remove"
       Are: "Are you sure?"
       Add: "Add a New Session"
+      Search!: "Search!"
+      All: "All sessionsexam"
+      Enter: "Enter Session exam name"
